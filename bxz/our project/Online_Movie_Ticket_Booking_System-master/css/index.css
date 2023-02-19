@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background: #09BDD0;
+}
+
+#NameOfCompany {
+    font-size: x-large;
+    color: white;
+}
+
+#secondary-nav {
+    background: #09BDD0;
+    color: white;
+}
+
+#primary-nav {
+    background: #09BDD0;
+    color: white;
+}
+
+#slider {
+    margin: 1vh;
+    width: auto;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    background-color: "03001C";
+}
+
+.page-wrapper,
+.content-wrapper {
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrapper {
+    margin-top: 1vh;
+    margin-bottom: 0vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    padding: 2vh 2vw;
+}
+
+.headingOfContent {
+    height: 14vh;
+}
+
+.list {
+    padding-top: 0.6vh;
+}
+
+.headingList {
+    display: inline;
+    margin-left: 1vw;
+}
+
+.Nowshowing {
+    color: black;
+}
+
+.Upcoming {
+    color: black;
+}
+
+.selected {
+    font-size: large;
+    background-color: rgba(243, 194, 194, 0.932);
+}
+
+.MoviesFilter {
+    float: left;
+}
+
+#calender {
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+.year {
+    margin-bottom: 2vh;
+}
+
+button {
+    padding: 0.5vh 0.5vw;
+    border-color: rgb(199, 198, 198);
+    border-radius: 0.7vh;
+    -webkit-border-radius: 0.7vh;
+    -moz-border-radius: 0.7vh;
+    -ms-border-radius: 0.7vh;
+    -o-border-radius: 0.7vh;
+}
+
+.yearInButtonclick,
+.monthINButtonclick {
+    background-color: #0072FF;
+    color: white;
+}

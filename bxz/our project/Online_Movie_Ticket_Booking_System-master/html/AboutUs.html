@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/AboutUs.css">
+    <title>AboutUs:-Movie Tickets Booking System</title>
+</head>
+
+<body>
+    <header>
+        <div id="primary-nav" class="container">
+            <div class="row">
+                <div class="column col-3 my-3" id="NameOfCompany">
+                    <img src="D:\bxz\lo.png" align="left" width="200">
+                </div>
+                <div class="column col-5 my-3" id="search">
+                    <input type="search" placeholder="Search Movies By Name... ">
+                </div>
+                <div class="column col-2 my-3" id="location">
+                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#citymodal">Enter City</button>
+                </div>
+                <div class="column col-2 my-3" id="profile">
+                    <!--<img src="p.jpg">-->Hello User's Name With Photo
+                </div>
+            </div>
+        </div>
+        <div id="secondary-nav">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link " href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="signinForCustomer.html">Signin for Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="signinForTheater.html">Signin for Theaters</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="allMoviesList.html">All Movies List</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="AboutUs.html">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactUs.html">ContactUs</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="citymodal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Enter Name of City:-</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    </div>
+                    <div class="modal-body">
+                        <datalist id="city">
+                            <option value="Surat"></option>
+                            <option value="Ahmedabad"></option>
+                            <option value="Vadodara"></option>
+                            <option value="Rajkot"></option>
+                            <option value="Mumbai"></option>
+                            <option value="Pune"></option>
+                            <option value="Delhi"></option>
+                            <option value="Kolkata"></option>
+                            <option value="Bangluru"></option>
+                            <option value="Haidarabaad"></option>
+                        </datalist> City:= <input type="text" list="city" placeholder=" Name Of City " required>
+                    </div>
+                    <div class="modal-footer ">
+                        <button type="button " class="btn btn-success ">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="jumbotron">
+        <h1 class="display-4">About Us!!</h1>
+        <p class="lead">This is Page contains our synopsis</p>
+        <hr class="my-4">
+        <p>
+            This movie database will primarily be used for entertainment. It will be designed for use in a
+casual context and targeted towards all age groups. The average user is expected to be
+interested in a diverse range of films, including comedy, drama, independent films, horror
+films, and numerous others. This website will be a great source of information for movie
+fans, but it will also benefit those looking for a decent movie to enjoy or who simply wish to
+kill some time. This website will include ratings and reviews of all the movies. It will also
+include information about the upcoming movies.
+ 
+The main objective of the project on Movie System is to reduce the hassle and commotion of
+standing in lines to buy movie tickets and provide all the necessary information needed at one
+place. This project will help us to book tickets from anywhere and it is very convenient and
+saves time. We categorise movies into their genre tags and based on that, the users will be
+recommended movies that belong to the same/similar genre.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+
+    <footer style="background-color:#09BDD0;">
+        <font size=3 color="white">
+            2023 Cinerama&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <br>
+             Copyrights ©. All rights reserved   </font>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
+</body>
+
+</html>

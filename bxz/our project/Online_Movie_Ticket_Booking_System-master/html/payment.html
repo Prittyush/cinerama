@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/payment.css">
+    <title>Payment</title>
+</head>
+
+<body>
+    <center>
+        <p> Pay Online (Debit Card/Credit card):</p>
+        <form method="post" action="#">
+            Enter Card Number : <input type="text" name="card" placeholder="Debit or Credit card number" name="cnumber" required> <br><br> Expiry date and CVV :
+            <select id="payselection" name="exmon" required>
+							<option hidden> MM </option>
+							<option value="1"> 1 </option>
+							<option value="2"> 2 </option>
+							<option value="3"> 3 </option>
+							<option value="4"> 4 </option>
+							<option value="5"> 5 </option>
+							<option value="6"> 6 </option>
+							<option value="7"> 7 </option>
+							<option value="8"> 8 </option>
+							<option value="9"> 9 </option>
+							<option value="10"> 10 </option>
+							<option value="11"> 11 </option>
+							<option value="12"> 12 </option>
+						</select>
+            <select id="payselection" name="exyear" required>
+							<option hidden> YYYY </option>
+							<option value="2018"> 2018 </option>
+							<option value="2019"> 2019 </option>
+							<option value="2020"> 2020 </option>
+							<option value="2021"> 2021 </option>
+							<option value="2022"> 2022 </option>
+							<option value="2023"> 2023 </option>
+							<option value="2024"> 2024 </option>
+							<option value="2025"> 2025 </option>
+							<option value="2026"> 2026 </option>
+							<option value="2027"> 2027 </option>
+							<option value="2028"> 2028 </option>
+							<option value="2029"> 2029 </option>
+							<option value="2030"> 2030 </option>
+							<option value="2031"> 2031 </option>
+						</select>
+
+            <input type="password" class="cvv" placeholder="cvv" name="cvv" required><br><br> Card Holder Name : <input type="text" name="hname" placeholder="as per bank record" name="uname" required> <br><br>
+            <input type="submit" value="make payment" class=button>
+        </form>
+        <footer style="background-color:#09BDD0;">
+            <font size=3 color="white">
+                2023 Cinerama
+                <br> Copyright ©. All rights reserved
+            </font>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
+</body>
+
+</html>

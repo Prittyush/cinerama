@@ -1,0 +1,31 @@
+footer {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: slategray;
+    width: auto;
+    bottom: 0px;
+}
+
+h1.page-title {
+    text-align: left;
+}
+
+.main-menu {
+    background: #ede2e2;
+    padding: 10px;
+    align-items: center;
+}
+
+.main-menu button {
+    margin: 0 60px 0 60px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+td {
+    padding: 15px;
+}

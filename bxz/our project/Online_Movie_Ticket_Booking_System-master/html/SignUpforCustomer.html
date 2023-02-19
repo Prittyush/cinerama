@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/SignUpforCustomer.css">
+    <meta charset="utf-8">
+    <title>SignUp for Customers</title>
+    <script src="SignUpforCustomer.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="primary-nav" class="container">
+            <div class="row">
+                <div class="column col-3 my-3" id="NameOfCompany">
+                    <img src="D:\bxz\lo.png" align="left" width="200">
+                </div>
+                <div class="column col-5 my-3" id="search">
+                    <input type="search" placeholder="Search Movies By Name... ">
+                </div>
+                <div class="column col-2 my-3" id="location">
+                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#citymodal">Enter City</button>
+                </div>
+                <div class="column col-2 my-3" id="profile">
+                    <!--<img src="p.jpg">-->Hello User's Name With Photo
+                </div>
+            </div>
+        </div>
+        <div id="secondary-nav">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link " href="../index.html">Home</a>
+                </li>
+                <li class=" nav-item ">
+                    <a class="nav-link " href="signinForCustomer.html ">Signin for Customers</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="signinForTheater.html ">Signin for Theaters</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="allMoviesList.html">All Movies List</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="AboutUs.html ">AboutUs</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="ContactUs.html ">ContactUs</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade " id="citymodal " data-backdrop="static " data-keyboard="false " tabindex="-1 " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
+            <div class="modal-dialog ">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <h5 class="modal-title " id="staticBackdropLabel ">Enter Name of City:-</h5>
+                        <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+            <span aria-hidden="true ">&times;</span>
+          </button>
+                    </div>
+                    <div class="modal-body ">
+                        <datalist id="city ">
+                            <option value="Surat "></option>
+                            <option value="Ahmedabad "></option>
+                            <option value="Vadodara "></option>
+                            <option value="Rajkot "></option>
+                            <option value="Mumbai "></option>
+                            <option value="Pune "></option>
+                            <option value="Delhi "></option>
+                            <option value="Kolkata "></option>
+                            <option value="Bangluru "></option>
+                            <option value="Haidarabaad "></option>
+                        </datalist> City:= <input type="text " list="city " placeholder=" Name Of City " required>
+                    </div>
+                    <div class="modal-footer ">
+                        <button type="button " class="btn btn-success ">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="signup">
+        <h2>SignUp For Customer</h2>
+        <form action="#" method="POST" enctype="multipart/form-data" id="signup-form">
+            <div class="form-group row">
+                <label for="fname" class="col-sm-3 col-form-label">First Name</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="fname">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="lname" class="col-sm-3 col-form-label">Last Name</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="lname">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="uname" class="col-sm-3 col-form-label">User Name</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="uname">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="repassword" class="col-sm-3 col-form-label">Password</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="repassword">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="password" class="col-sm-3 col-form-label">ReEnter Password</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="password">
+                </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-3 pt-0">Gender</legend>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="male" value="male" checked>
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="female" value="female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="female" value="female">
+                            <label class="form-check-label" for="female">Other</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group row">
+                <label for="mono" class="col-sm-3 col-form-label">Mobile No.</label>
+                <div class="col-sm-9">
+                    <input type="tel" class="form-control" id="mono">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-sm-3 col-form-label">Email Id</label>
+                <div class="col-sm-9">
+                    <input type="email" class="form-control" id="email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="address" class="col-sm-3 col-form-label">Address</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="address">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="profileImg" class="col-sm-3 col-form-label">Profile image</label>
+                <div class="col-sm-9">
+                    <input type="file" class="form-control" id="profileImg">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer style="background-color:#09BDD0;">
+        <font size=3 color="white">
+            2023 Cinerama
+            <br> Copyright ©. All rights reserved
+        </font>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
+</body>
+
+</html>
