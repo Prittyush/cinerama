@@ -183,7 +183,8 @@ body {
 }
 
 .movie-container select {
-  background-color: #fff;
+  background-color: black;
+  color: WHITE;;
   border: 0;
   border-radius: 5px;
   font-size: 14px;
@@ -213,7 +214,7 @@ body {
 }
 
 .seat.occupied {
-  background-color: #fff;
+  background-color: red;
 }
 
 .seat:nth-of-type(2) {
@@ -235,9 +236,10 @@ body {
 }
 
 .showcase {
+  
   background:#292826;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 20px 20px;
+  border-radius: 20px;
   color: #777;
   list-style-type: none;
   display: flex;
