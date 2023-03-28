@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=60%, initial-scale=0.5">
+<link rel="stylesheet" href="cinstyle.css">
+
+<style>
+* {box-sizing: border-box;}
+body {font-family: montserrat;
+  padding-top:8%;}
+.button {
+    background-color: #292826;
+    border: hsl(48, 94%, 62%);;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    
+  }
+  
+  .button1 {
+    background-color:  #292826;
+    color: rgb(255, 254, 254);
+    border: 2px solid   #292826;
+  }
+  .button1active {
+    background-color:  #f3a915;
+    color: rgb(2, 2, 2);
+    border: 2px solid   #292826;
+  }
+  
+  .button1:hover {
+    background-color:hsl(48, 94%, 62%);;
+    color: rgb(0, 0, 0);
+  }
+  .button2 {
+    background-color:  #fffffe;
+    color: #292826;
+    border: 2px solid   #292826;
+  }
+  .button2:hover {
+    background-color:hsl(48, 94%, 62%);;
+    color: rgb(0, 0, 0);
+  }
+
+</style>
+</head>
+<body>
+  <div style="border:2px solid black;  background-color: #292826; width: 100%;position: absolute;top: 10px;  height:15% ;font-family: Poppins , sans-serif; font-size: 20px;">
+    <a href="D:\Desktop\cinerama\slideshow.html"><img src="LOGO .png"
+            style="float: left;width: 260px;height: 85px;border: 5; margin-top: 9px;">
+    </a>
+   
+    <ul style="padding-top: 25px;padding-left: 50px;float: left;">
+
+
+        <li><a class="fo" href="#abtus">About us</a></li>
+        <li><a class="fo" href="#abtus">Rewards</a></li>
+        <li><a class="fo" href="#form-container">Contact us</a></li>
+        <li class="dropdown">
+            <a class="fo" href="javascript:void(0)" class="dropbtn">Login</a>
+            <div class="dropdown-content">
+                <a href="#">User Login</a>
+                <a href="#">Theater Login</a>
+                <a href="#">Admin Login</a>
+            </div>
+        </li>
+        
+        
+    </ul>
+    <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search" style="padding-top: 10px; margin-top:35px;margin-left: 50px; float: inline-start; font-family: Poppins , sans-serif;">
+          <button type="submit" style=" background-color:#F9D342 ; float: inline-start; text-align: center; font-family: Poppins , sans-serif;;">Submit<i class="fa fa-search"></i></button>
+        </form>
+</div>
+<br><br>
+<br>
+<hr/>
+        <a href="datetime.html"><button class="button button1active">TODAY</button></a>
+        <a href="datetime1.html"><button class="button button1">TOMORROW</button></a>
+        <a href="datetime2.html"><button class="button button1">DAY AFTER TOMORROW</button></a>
+      
+<H2 id="d"></H2>
+<hr/><br>
+</div><br>
+<br>
+</div>
+<div style="  width: 100%;top: 10px; bottom:80px ; height:15% ;font-family: Poppins , sans-serif; font-size: 20px;">
+<script>
+  
+function formatdate(x)
+{
+var day = x.getDate();
+var month = x.getMonth() + 1;
+var year = x.getFullYear();
+var d=x.getDay();
+const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var fd = weekday[d]+` ${day}-${month}-${year}`;
+return fd;
+
+}
+
+var today=formatdate(new Date());
+var tom1 = formatdate(new Date(new Date().getTime()+(1*24*60*60*1000)));
+var tom2 = formatdate(new Date(new Date().getTime()+(2*24*60*60*1000)));
+var tom3 = formatdate(new Date(new Date().getTime()+(3*24*60*60*1000)));
+//const dates = [today,tom1,tom2,tom3];
+document.getElementById("d").innerHTML=today;
+  
+</script>
+<h3 >PVR: Nexus Mall, Koramangala</h3>
+<!--buttons for selecting the movie time-->
+<a href="ticket.html"><button class="button button2">9:00 a.m</button></a>
+<a href="ticket.html"><button class="button button2">12:15 a.m</button></a>
+<a href="ticket.html"><button class="button button2">3:00 a.m</button></a>
+
+<h3 >INOX : Garuda Mall, Malleshwaram</h3>
+<!--buttons for selecting the movie time-->
+<a href="ticket.html"><button class="button button2">9:00 a.m</button></a>
+<a href="ticket.html"><button class="button button2">12:15 a.m</button></a>
+<a href="ticket.html"><button class="button button2">6:00 a.m</button></a>
+
+<h3 >INOX : Central Mall, Jayanagar</h3>
+<!--buttons for selecting the movie time-->
+<a href="ticket.html"><button class="button button2">9:00 a.m</button></a>
+<a href="ticket.html"><button class="button button2">12:15 a.m</button></a>
+<a href="ticket.html"><button class="button button2">6:00 a.m</button></a>
+</div>
+
+<br>
+
+<footer style="position:fixed; bottom: 0%; width: 100%; background-color: #292826; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+  <font size=3 color="grey">
+      <br> 
+      2023 | Cinerama | ©. All rights reserved
+      <br><br>
+  </font>
+</footer>
+</body>
+</html> 

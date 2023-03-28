@@ -7,11 +7,14 @@
 <link rel="stylesheet" href="cinstyle.css">
 
 <style>
+  @import 'https://fonts.googleapis.com/css?family=Raleway';
 * {box-sizing: border-box;}
-body {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+body {font-family:raleway;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
-
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
 /* Slideshow container */
 .slideshow-container {
   max-width: fit-content;
@@ -51,16 +54,64 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 .img{
-    width: 1000px;
+    width: 1200px;
     height: 300px;
+}
+.container
+{
+  font-family: "Poppins" , sans-serif;
+    margin: 0 auto;
+	padding: 10em 3em;
+	text-align: center;
+}
+
+.container a
+{
+    color: #f50000;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+/* Pull right and left  */
+.pullRightLeft a:before, .pullRightLeft a:after
+{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0px;
+    content: '';
+    background: #000000;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.pullRightLeft a:before
+{
+    left: 0px;
+} 
+
+.pullRightLeft a:after
+{
+    right: 0px;
+}
+
+.pullRightLeft a:hover:before, .pullRightLeft a:hover:after
+{
+    width: 100%;
 }
 </style>
 </head>
 <body>
-    <div style="border:2px solid black;  background-color: #292826; width: 100%;position: absolute;top: 10px;  height:15% ; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20px;">
+
+    <div style="border:2px solid black;  background-color: #292826; width: 100%;position: absolute;top: 10px;  height:15% ;font-family: Poppins , sans-serif; font-size: 20px;">
         <a href="D:\Desktop\cinerama\slideshow.html"><img src="LOGO .png"
                 style="float: left;width: 260px;height: 85px;border: 5; margin-top: 9px;">
         </a>
+       
         <ul style="padding-top: 25px;padding-left: 50px;float: left;">
 
 
@@ -70,7 +121,7 @@ img {vertical-align: middle;}
             <li class="dropdown">
                 <a class="fo" href="javascript:void(0)" class="dropbtn">Login</a>
                 <div class="dropdown-content">
-                    <a href="#">User Login</a>
+                    <a href="login.html">User Login</a>
                     <a href="#">Theater Login</a>
                     <a href="#">Admin Login</a>
                 </div>
@@ -80,55 +131,57 @@ img {vertical-align: middle;}
         </ul>
         <div class="search-container">
             <form action="/action_page.php">
-              <input type="text" placeholder="Search.." name="search" style="padding-top: 10px; margin-top:35px;margin-left: 50px; float: inline-start; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-              <button type="submit" style=" background-color:#F9D342 ; float: inline-start; text-align: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Submit<i class="fa fa-search"></i></button>
+              <input type="text" placeholder="Search.." name="search" style="padding-top: 10px; margin-top:35px;margin-left: 50px; float: inline-start; font-family: Poppins , sans-serif;">
+              <button type="submit" style=" background-color:#F9D342 ; float: inline-start; text-align: center; font-family: Poppins , sans-serif;;">Submit<i class="fa fa-search"></i></button>
             </form>
   </div>
   <br><br><br><br>
 
 
-<div class="slideshow-container">
-<div class="mySlides fade">
-  <img class="img"src="1.png" >
-</div>
 
-<div class="mySlides fade">
-  <img class="img" src="2.png">
-</div>
 
-<div class="mySlides fade">
-  <img class="img" src="3.png" >
-  </div>
-
-</div>
-<br>
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img class="img"src="1.png" >
+    </div>
+    
+    <div class="mySlides fade">
+      <img class="img" src="2.png">
+    </div>
+    
+    <div class="mySlides fade">
+      <img class="img" src="3.png" >
+      </div>
+    
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
 
 <div class="box">
   <a class="button" href="#popup1"><img class="img1" src="av2.jpeg"></a>
@@ -144,7 +197,7 @@ function showSlides() {
       <div class="content">
         <p>Jake Sully and Ney'tiri have formed a family and are doing everything to stay together. However, they must leave their home and explore the regions of Pandora. When an ancient threat resurfaces, Jake must fight a difficult war against the humans.</p>
         
-          <a href="ticket.html"><button style="margin-top: auto; margin-left: 45%; background-color: #292826; color: #F9D342; font-weight: 100; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Book Now</button></a>
+          <a href="datetime.html"><button style="margin-top: auto; margin-left: 45%; background-color: #292826; color: #F9D342; font-weight: 100; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Book Now</button></a>
       </div>
   </div>
 </div>
@@ -155,7 +208,7 @@ function showSlides() {
       <a class="close" href="#">&times;</a>
       <div class="content">
           <p>Pilot Brodie Torrance saves passengers from a lightning strike by making a risky landing on a war-torn island -- only to find that surviving the landing was just the beginning. When dangerous rebels take most of the passengers hostage, the only person Torrance can count on for help is Louis Gaspare, an accused murderer who was being transported by the FBI.</p>
-              <a href="ticket.html"><button style="margin-top: auto; margin-left: 45%; background-color: #292826; color: #F9D342; font-weight: 100;">Book Now</button></a>
+              <a href="datetime.html"><button style="margin-top: auto; margin-left: 45%; background-color: #292826; color: #F9D342; font-weight: 100;">Book Now</button></a>
       </div>
   </div>
 </div>
@@ -167,7 +220,7 @@ function showSlides() {
       <a class="close" href="#">&times;</a>
       <div class="content">
           <p>Seventeen-year-old Rose hails from an aristocratic family and is set to be married. When she boards the Titanic, she meets Jack Dawson, an artist, and falls in love with him.</p>
-            <a href="ticket.html" > <button style="margin-top: auto; margin-left: 45%; background-color: #292826; color: #F9D342; font-weight: 100;">Book Now</button></a>
+            <a href="datetime.html" > <button style="margin-top: auto; margin-left: 45%; background-color: #292826; color: #F9D342; font-weight: 100;">Book Now</button></a>
       </div>
   </div>
 </div>

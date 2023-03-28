@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox - Registration Form Design</title>
+    <link rel="stylesheet" href="regstyle.css">
+</head>
+
+<body>
+    <div style="border:2px solid black;  background-color: #292826; width: 100%;position: absolute;top: 10px;  height:15% ;font-family: Poppins , sans-serif; font-size: 20px;">
+        <a href="D:\Desktop\cinerama\slideshow.html"><img src="LOGO .png"
+                style="float: left;width: 260px;height: 85px;border: 5; margin-top: 9px;">
+        </a>
+       
+        <ul style="padding-top: 25px;padding-left: 50px;float: left;">
+
+
+            <li><a class="fo" href="#abtus">About us</a></li>
+            <li><a class="fo" href="#abtus">Rewards</a></li>
+            <li><a class="fo" href="#form-container">Contact us</a></li>
+            <li class="dropdown">
+                <a class="fo" href="javascript:void(0)" class="dropbtn">Login</a>
+                <div class="dropdown-content">
+                    <a href="login.html">User Login</a>
+                    <a href="#">Theater Login</a>
+                    <a href="#">Admin Login</a>
+                </div>
+            </li>
+            
+            
+        </ul>
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search" style="padding-top: 10px; margin-top:35px;margin-left: 50px; float: inline-start; font-family: Poppins , sans-serif;">
+              <button type="submit" style=" background-color:#F9D342 ; float: inline-start; text-align: center; font-family: Poppins , sans-serif;;">Submit<i class="fa fa-search"></i></button>
+            </form>
+  </div>
+  <br><br><br><br>
+
+    
+        <form class="signup-form">
+            <!-- FORM HEADER -->
+            <div class="form-header">
+                <h1>Create Account</h1>
+            </div>
+            <!-- FORM BODY -->
+            <div class="form-body">
+                <!-- First name & Last name -->
+                <div class="row">
+                    <div class="input-group">
+                        <label>First name </label>
+                        <input type="text" placholder="Enter your first name">
+                    </div>
+                    <div class="input-group">
+                        <label>Last name</label>
+                        <input type="text" placholder="Enter your last name">
+                    </div>
+                </div>
+                <!-- Email -->
+                <div class="row">
+                    <div class="input-group">
+                        <label>Email </label>
+                        <input type="email" placholder="Enter your email address">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label>Password </label>
+                        <input type="password" placholder="Enter your your password">
+                    </div>
+                    <div class="input-group">
+                        <label>Confirm Password</label>
+                        <input type="password" placholder="Enter your password again">
+                    </div>
+                </div>
+                <!-- Gender & Hobbies -->
+                <div class="row">
+                    <div class="input-group">
+                        <label>Gender </label>
+
+                        <div class="radio-group">
+
+                            <div>
+                                <label for="male">
+                                    <input type="radio" name="gender" id="male">
+                                    Male
+                                </label>
+                            </div>
+
+                            <div>
+                                <label for="female">
+                                    <input type="radio" name="gender" id="female">
+                                    Female
+                                </label>
+                            </div>
+
+                            <div>
+                                <label for="other">
+                                    <input type="radio" name="gender" id="other"> Other
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>Hobbies</label>
+                        <div class="checkbox-group">
+                            <div>
+                                <label for="music">
+                                    <input type="checkbox" name="hobbies" id="music">
+                                    Music
+                                </label>
+                            </div>
+
+                            <div>
+                                <label for="cooking">
+                                    <input type="checkbox" name="cooking" id="cooking">
+                                    Cook
+                                </label>
+                            </div>
+
+                            <div>
+                                <label for="travel">
+                                    <input type="checkbox" name="travel" id="travel">
+                                    Travel
+                                </label>
+                            </div>
+
+                            <div>
+                                <label for="movies">
+                                    <input type="checkbox" name="movies" id="movies">
+                                    Movie
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Source of Income & Income -->
+                <div class="row">
+                    <div class="input-group">
+                        <label for="">Source of Income</label>
+                        <select name="" id="">
+                            <option>Employed</option>
+                            <option>Self-Employed</option>
+                            <option>Unemployed</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Income</label>
+                        <div class="range-group">
+                            <input type="range" onChange="changeSliderValue(this.value)" min="20" max="200" step="5"
+                                value="20">
+                            <label id="rangeSliderLabel">20 K</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Upload Profile Picure & Age -->
+                <div class="row">
+                    <div class="input-group">
+                        <label>Upload Profile Picture</label>
+                        <input type="file">
+                    </div>
+                    <div class="input-group">
+                        <label>Age</label>
+                        <input type="number">
+                    </div>
+                </div>
+
+                <!--  Bio   -->
+                <div class="row">
+                    <div class="input-group">
+                        <label for="">Bio</label>
+                        <textarea> </textarea>
+                    </div>
+                </div>
+            </div>
+            <!--  FORM FOOTER   -->
+            <div class="form-footer">
+                <button class="btn">Create</button>
+            </div>
+        </form>
+    
+
+    <script>
+        const changeSliderValue = (value) => {
+            document.getElementById("rangeSliderLabel").innerText = value + " K";
+        }
+    </script>
+
+</body>
+
+</html>

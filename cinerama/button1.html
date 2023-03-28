@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*CSS FOR BUTTONS*/
+button {
+  align-self: center;
+  line-height: 20px;
+  font-weight: bold;
+  padding: 0 40px;
+  background:  #f3a915;
+  border: none;
+  width: 10px;
+  margin-top: 1px;
+  margin-left: 1px;
+  align-items: center;
+  
+}
+/*BUTTON HOVER*/
+button:hover {
+  background: rgb(16, 92, 64);
+  margin-top: 2px;
+  margin-left: 1px;
+  font-weight: bold;
+  padding: 0 40px;
+  background: #292826;
+  color: white;
+  border: none;
+}
+</style>
+</head>
+<body>
+<center>
+<button id="mybtn" style="width: auto;" onclick="myFunct()">ENTER THE SEATING DETAILS</button>
+<P>PREVIEW</P>
+<br>
+</center>
+
+<script>
+
+function myFunct() 
+{
+let t1=prompt("Enter the number of types of the seats", "2"); 
+for(let q=1;q<=t1;q++)
+{
+let t2= prompt("Enter the type of the seat", "RECLINER/NORMAL"); 
+let val = prompt("Enter the no. of rows", "12");
+let v = prompt("Enter the no. of seats per row", "10");
+document.body.append(t2);
+var h=document.createElement("br");
+ document.body.appendChild(h);
+    let a="A";
+    for(let i=0;i<val;i++)
+    {
+      for(let j=0;j<v;j++)
+        {
+  var x = document.createElement("BUTTON");
+  var t = document.createTextNode(a+j);
+  x.appendChild(t);
+  document.body.appendChild(x);
+  }
+ h=document.createElement("br");
+ document.body.appendChild(h);
+ a=String.fromCharCode(a.charCodeAt(0) + 1);
+  }
+var hr=document.createElement("hr");
+document.body.appendChild(hr);
+}
+}
+</script>
+
+</body>
+</html>
