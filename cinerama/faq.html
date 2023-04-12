@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-wallet</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+          *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        
+        .column {
+          float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        .card {
+            background-color: #292826;
+            color: #F9D342;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin: 8px;
+        }
+        
+        .about-section {
+          padding: 50px;
+          text-align: center;
+          background-color: #F9D342;
+          color: #292826;
+        }
+        
+        .container {
+          padding: 0 16px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: #292826;
+          background-color: #F9D342;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        .button:hover {
+          background-color: #555;
+        }
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+        * {box-sizing: border-box;}
+        
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+        .mySlides {display:none}
+        .w3-left, .w3-right, .w3-badge {cursor:pointer}
+        .w3-badge {height:13px;width:13px;padding:0}
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: fit-content;
+          max-height: fit-content;
+          position: center;
+          margin: auto;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 200px) {
+          .text {font-size: 11px}
+        }
+        .img{
+            width: 1200px;
+            height: 300px;
+        }
+        .container
+        {
+          
+            margin: 0 auto;
+            padding: 10em 3em;
+            text-align: center;
+        }
+        
+        .container a
+        {
+            color: #f50000;
+            text-decoration: none;
+            font: 20px;
+            margin: 0px 10px;
+            padding: 10px 10px;
+            position: relative;
+            z-index: 0;
+            cursor: pointer;
+        }
+        /* Pull right and left  */
+        .pullRightLeft a:before, .pullRightLeft a:after
+        {
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            top: 0px;
+            content: '';
+            background: #000000;
+            opacity: 0.3;
+            transition: all 0.3s;
+        }
+        
+        .pullRightLeft a:before
+        {
+            left: 0px;
+        } 
+        
+        .pullRightLeft a:after
+        {
+            right: 0px;
+        }
+        
+        .pullRightLeft a:hover:before, .pullRightLeft a:hover:after
+        {
+            width: 100%;
+        }
+        </style>
+</head>
+
+<body style= "background :#F9D342;">
+  
+    <div style="border:2px solid black;  background-color: #292826; width: 100%;position: absolute;top: 10px;  height:15% ;font-family: Poppins , sans-serif; font-size: 20px;">
+        <a href="D:\Desktop\cinerama\slideshow.html"><img src="LOGO .png"
+                style="float: left;width: 260px;height: 85px;border: 5; margin-top: 9px;">
+        </a>
+       
+        <ul style="padding-top: 25px;padding-left: 50px;float: left;">
+
+
+            <li><a class="fo" href="about.html">About us</a></li>
+            <li><a class="fo" href="#abtus">Rewards</a></li>
+            <li><a class="fo" href="faq.html">Contact us</a></li>
+            <li class="dropdown">
+                <a class="fo" href="javascript:void(0)" class="dropbtn">Login</a>
+                <div class="dropdown-content">
+                    <a href="login.html">User Login</a>
+                    <a href="reg_form.html">Theater Login</a>
+                    <a href="#">Admin Login</a>
+                </div>
+            </li>
+            
+            
+        </ul>
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search" style="padding-top: 10px; margin-top:35px;margin-left: 50px; float: inline-start; font-family: Poppins , sans-serif;">
+              <button type="submit" style=" background-color:#F9D342 ; float: inline-start; text-align: center; font-family: Poppins , sans-serif;;">Submit<i class="fa fa-search"></i></button>
+            </form>
+  </div>
+<br><br><br><br>
+    <!-- main-continer section -->
+    <section id="main-continer">
+        <div class="wallet-container text-center">
+            
+            <h1>FAQ</h1>
+            <hr>
+
+            <div class="questions">
+                <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#q1"
+                    aria-expanded="false" aria-controls="q1">
+                    How do i regester <i class="fa fa-angle-down"></i>
+                </button>
+                </p>
+                <div class="collapse" id="q1">
+                    <div class="card card-body">
+                        Some placeholder content for the collapse component. This panel is hidden by default but
+                        revealed
+                        when the user activates the relevant trigger.
+                    </div>
+                </div>
+                <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#q2"
+                    aria-expanded="false" aria-controls="q2">
+                    How do i Transfer <i class="fa fa-angle-down"></i>
+                </button>
+                </p>
+                <div class="collapse" id="q2">
+                    <div class="card card-body">
+                        Some placeholder content for the collapse component. This panel is hidden by default but
+                        revealed
+                        when the user activates the relevant trigger.
+                    </div>
+                </div>
+            </div>
+            <div class="question-form"> <form action="">
+                <span><b>Email</b></span>
+                <input type="text" class="form-control">
+                <!-- <span><b></b></span> -->
+                <span><b>Question</b></span>
+                <textarea name="" id="" cols="5" rows="2" class="form-control"></textarea>
+                <input type="submit" class="form-contro l btn btn-outline-light btn-sm">
+                </form>
+            </div>
+            <!-- 
+
+            <div class="txn-history">
+                <p><b>History</b></p>
+                <p class="txn-list">Payment to xyz shop<span class="debit-amount">-$100</span></p>
+
+                <p class="txn-list">Payment to abc shop<span class="debit-amount">-$150</span></p>
+
+                <p class="txn-list">Credit From abc ltd<span class="credit-amount">+$300</span></p>
+
+                <p class="txn-list">Transfer From John Doe<span class="credit-amount">+$100</span></p>
+            </div> -->
+<hr><br><br>
+        </div>
+    </section>
+    <!--end main-continer section -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

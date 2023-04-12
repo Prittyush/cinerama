@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-wallet/ History</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div style="border:2px solid black;  background-color: #292826; width: 100%;position: absolute;top: 10px;  height:15% ;font-family: Poppins , sans-serif; font-size: 20px;">
+    <a href="D:\Desktop\cinerama\slideshow.html"><img src="LOGO .png"
+            style="float: left;width: 260px;height: 85px;border: 5; margin-top: 9px;">
+    </a>
+   
+    <ul style="padding-top: 25px;padding-left: 50px;float: left;">
+
+
+        <li><a class="fo" href="about.html">About us</a></li>
+        <li><a class="fo" href="#abtus">Rewards</a></li>
+        <li><a class="fo" href="faq.html">Contact us</a></li>
+        <li class="dropdown">
+            <a class="fo" href="javascript:void(0)" class="dropbtn">Login</a>
+            <div class="dropdown-content">
+                <a href="login.html">User Login</a>
+                <a href="reg_form.html">Theater Login</a>
+                <a href="#">Admin Login</a>
+            </div>
+        </li>
+        
+        
+    </ul>
+    <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search" style="padding-top: 10px; margin-top:35px;margin-left: 50px; float: inline-start; font-family: Poppins , sans-serif;">
+          <button type="submit" style=" background-color:#F9D342 ; float: inline-start; text-align: center; font-family: Poppins , sans-serif;;">Submit<i class="fa fa-search"></i></button>
+        </form>
+</div>
+
+<br><br><br><br>
+<!-- menu section -->
+<section id="menu">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
+            images, lists, etc.
+        </div> -->
+            <div class="menu">
+                <div class="container">
+                    <div class="item" onclick="redirect('index.html')">
+                        <i class="fa fa-home"></i>
+                        <p>Home</p>
+                    </div>
+                    <a href="inbox.html">
+                    <div class="item" onclick="redirect('inbox.html')">
+                        <i class="fa fa-history"></i>
+                        <p>History</p>
+                    </div>
+                    </a> 
+                    <A href="bank.html">
+                    <div class="item" onclick="redirect('bank.html')">
+                        <i class="fa fa-university"></i>
+                        <p>Bank</p>
+                    </div>
+                </A>
+                    <div class="item" onclick="redirect('about-us.html')">
+                        <i class="fa fa-info"></i>
+                        <p>About us</p>
+                    </div>
+                    <div class="item" onclick="redirect('./faq.html')">
+                        <i class="fa fa-question"></i>
+                        <p>FAQ</p>
+                    </div>
+                    <div class="item">
+                        <i class="fa fa-money"></i>
+                        <p>Currency converter <i style="font-size: 10px; color: rgb(147, 147, 147);">(Upcoming)</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="menu-footer">
+            Designed by Victor Josiah © 2021 <br>
+            <button class="btn btn-primary btn-sm">
+                <a href="https://github.com/jovick-coder/E-wallet">
+                    GitHub
+                    <i class="fa fa-github"></i>
+                </a>
+            </button>
+        </span>
+    </div>
+</section>
+<!-- end menu section -->
+
+    <!-- main-continer section -->
+    <section id="main-continer">
+        <div class="wallet-container text-center">
+            <p class="page-title"><i class="fa fa-align-left"></i>My E-wallet<i class="fa fa-user"></i></p>
+
+            <div class="amount-box text-center">
+                <img src="https://lh3.googleusercontent.com/ohLHGNvMvQjOcmRpL4rjS3YQlcpO0D_80jJpJ-QA7-fQln9p3n7BAnqu3mxQ6kI4Sw"
+                    alt="wallet">
+                <p>Total Balance</p>
+                <p class="amount">$ 123</p>
+            </div>
+
+
+
+            <div class="txn-history">
+                <p><b>History</b></p>
+                <p class="txn-list">Payment to xyz shop<span class="debit-amount">-$100</span></p>
+
+                <p class="txn-list">Payment to abc shop<span class="debit-amount">-$150</span></p>
+
+                <p class="txn-list">Credit From abc ltd<span class="credit-amount">+$300</span></p>
+
+                <p class="txn-list">Transfer From John Doe<span class="credit-amount">+$100</span></p>
+            </div>
+
+            <div class="footer-menu">
+                <div class="row text-center">
+                    <div class="container">
+                        <div class="item" onclick=windows.location.href="bank.html">
+                            <i class="fa fa-home"></i>
+                            <p></p>
+                        </div>
+                        <A href="inbox.html">
+                        <div class="item" onclick="redirect('inbox.html')">
+                            <i class="fa fa-history"></i>
+                            <p></p>
+                        </div>
+                    </A>
+                        <A href="bank.html">
+                        <div class="item" onclick="redirect('bank.html')">
+                            <i class="fa fa-university"></i>
+                            <p></p>
+                        </div>
+                        </A>
+                        
+                        <div class="item" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                            aria-controls="offcanvasExample">
+                            <i class="fa fa-list"></i>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end main-continer section -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

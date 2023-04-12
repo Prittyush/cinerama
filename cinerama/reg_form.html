@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<link rel="stylesheet" href="cinstyle.css">
+
+<style>
+  @import 'https://fonts.googleapis.com/css?family=Raleway';
+* {box-sizing: border-box;}
+body {font-family:raleway;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+/* Slideshow container */
+.slideshow-container {
+  max-width: fit-content;
+  max-height: fit-content;
+  position: center;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 200px) {
+  .text {font-size: 11px}
+}
+.img{
+    width: 1200px;
+    height: 300px;
+}
+.container
+{
+  font-family: "Poppins" , sans-serif;
+    margin: 0 auto;
+	padding: 10em 3em;
+	text-align: center;
+}
+
+.container a
+{
+    color: #f50000;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+/* Pull right and left  */
+.pullRightLeft a:before, .pullRightLeft a:after
+{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0px;
+    content: '';
+    background: #000000;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.pullRightLeft a:before
+{
+    left: 0px;
+} 
+
+.pullRightLeft a:after
+{
+    right: 0px;
+}
+
+.pullRightLeft a:hover:before, .pullRightLeft a:hover:after
+{
+    width: 100%;
+}
+</style>
+</head>
+<body>
+
+    <div style="border:2px solid black;  background-color: #292826; width: 100%;position: absolute;top: 10px;  height:15% ;font-family: Poppins , sans-serif; font-size: 20px;">
+        <a href="D:\Desktop\cinerama\slideshow.html"><img src="LOGO .png"
+                style="float: left;width: 260px;height: 85px;border: 5; margin-top: 9px;">
+        </a>
+       
+        <ul style="padding-top: 25px;padding-left: 50px;float: left;">
+
+
+            <li><a class="fo" href="about.html">About us</a></li>
+            <li><a class="fo" href="#abtus">Rewards</a></li>
+            <li><a class="fo" href="faq.html">Contact us</a></li>
+            <li class="dropdown">
+                <a class="fo" href="javascript:void(0)" class="dropbtn">Login</a>
+                <div class="dropdown-content">
+                    <a href="login.html">User Login</a>
+                    <a href="reg_form.html">Theater Login</a>
+                    <a href="#">Admin Login</a>
+                </div>
+            </li>
+            
+            
+        </ul>
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search" style="padding-top: 10px; margin-top:35px;margin-left: 50px; float: inline-start; font-family: Poppins , sans-serif;">
+              <button type="submit" style=" background-color:#F9D342 ; float: inline-start; text-align: center; font-family: Poppins , sans-serif;;">Submit<i class="fa fa-search"></i></button>
+            </form>
+  </div>
+  <br><br><br><br>
+
+    
+        <form class="signup-form">
+            <!-- FORM HEADER -->
+            <div class="form-header">
+                <h1>Create Account</h1>
+            </div>
+            <!-- FORM BODY -->
+            <div class="form-body">
+                <!-- First name & Last name -->
+                <div class="row">
+                    <div class="input-group">
+                        <label>First name </label>
+                        <input type="text" placholder="Enter your first name">
+                    </div>
+                    <div class="input-group">
+                        <label>Last name</label>
+                        <input type="text" placholder="Enter your last name">
+                    </div>
+                </div>
+                <!-- Email -->
+                <div class="row">
+                    <div class="input-group">
+                        <label>Email </label>
+                        <input type="email" placholder="Enter your email address">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label>Password </label>
+                        <input type="password" placholder="Enter your your password">
+                    </div>
+                    <div class="input-group">
+                        <label>Confirm Password</label>
+                        <input type="password" placholder="Enter your password again">
+                    </div>
+                </div>
+                <!-- Gender & Hobbies -->
+                <div class="row">
+                    <div class="input-group">
+                        <label>Gender </label>
+
+                        <div class="radio-group">
+
+                            <div>
+                                <label for="male">
+                                    <input type="radio" name="gender" id="male">
+                                    Male
+                                </label>
+                            </div>
+
+                            <div>
+                                <label for="female">
+                                    <input type="radio" name="gender" id="female">
+                                    Female
+                                </label>
+                            </div>
+
+                            <div>
+                                <label for="other">
+                                    <input type="radio" name="gender" id="other"> Other
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>Hobbies</label>
+                        <div class="checkbox-group">
+                            <div>
+                                <label for="music">
+                                    <input type="checkbox" name="hobbies" id="music">
+                                    Music
+                                </label>
+                            </div>
+
+                            <div>
+                                <label for="cooking">
+                                    <input type="checkbox" name="cooking" id="cooking">
+                                    Cook
+                                </label>
+                            </div>
+
+                            <div>
+                                <label for="travel">
+                                    <input type="checkbox" name="travel" id="travel">
+                                    Travel
+                                </label>
+                            </div>
+
+                            <div>
+                                <label for="movies">
+                                    <input type="checkbox" name="movies" id="movies">
+                                    Movie
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Source of Income & Income -->
+                <div class="row">
+                    <div class="input-group">
+                        <label for="">Source of Income</label>
+                        <select name="" id="">
+                            <option>Employed</option>
+                            <option>Self-Employed</option>
+                            <option>Unemployed</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Income</label>
+                        <div class="range-group">
+                            <input type="range" onChange="changeSliderValue(this.value)" min="20" max="200" step="5"
+                                value="20">
+                            <label id="rangeSliderLabel">20 K</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Upload Profile Picure & Age -->
+                <div class="row">
+                    <div class="input-group">
+                        <label>Upload Profile Picture</label>
+                        <input type="file">
+                    </div>
+                    <div class="input-group">
+                        <label>Age</label>
+                        <input type="number">
+                    </div>
+                </div>
+
+                <!--  Bio   -->
+                <div class="row">
+                    <div class="input-group">
+                        <label for="">Bio</label>
+                        <textarea> </textarea>
+                    </div>
+                </div>
+            </div>
+            <!--  FORM FOOTER   -->
+            <div class="form-footer">
+                <button class="btn">Create</button>
+            </div>
+        </form>
+    <br><br><br>
+
+    <script>
+        const changeSliderValue = (value) => {
+            document.getElementById("rangeSliderLabel").innerText = value + " K";
+        }
+    </script>
+
+</body>
+
+</html>
